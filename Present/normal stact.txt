@@ -1,0 +1,4 @@
+Front : HTML, Tailwind
+Back : php, xampp
+Mid :  JS, Node
+
