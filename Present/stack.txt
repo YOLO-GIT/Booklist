@@ -1,5 +1,5 @@
-Front : HTML, Tailwind
+Front : React, Tailwind
 Back : php, xampp
-Mid :  NodeJS
+Mid :  ReduxUi, Node
 
 (If I can do it.)
