@@ -1,0 +1,4 @@
+Change the color based on the type.
+Users choose: FB, IG or Twitter
+two max
+
