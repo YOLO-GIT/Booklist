@@ -1,0 +1,7 @@
+The users have:-
+
+First name
+Last name
+Nickname
+Others tag (For some reason)
+desc (75 max word.)
