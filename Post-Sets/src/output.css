@@ -1898,6 +1898,10 @@ video {
   fill: #ef4444 !important;
 }
 
+.peer:checked ~ .peer-checked\:\!fill-yellow-500 {
+  fill: #eab308 !important;
+}
+
 @media (min-width: 640px) {
   .sm\:my-0 {
     margin-top: 0px;
