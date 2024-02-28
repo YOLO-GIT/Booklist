@@ -14,11 +14,12 @@
     <section class="py-8 px-4 my-10 sm:my-20 sm:py-0 sm:px-0">
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <h1 class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-                <img class="w-8 h-8 mr-2" src="../logo/book/Logo.png" alt="logo">
+                <img class="w-8 h-8 mr-2 transition-transform transform hover:rotate-180"
+                    src="../logo/book/Logo.png" alt="logo">
                 𝐵𝑜𝑜𝓀𝐿𝒾𝓈𝓉
             </h1>
             <div
-                class="w-full flex flex-col md:flex-row bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-max xl:p-0 dark:bg-primary-800 dark:border-gray-700">
+                class="w-full flex flex-col md:flex-row bg-white rounded-lg shadow-md dark:border md:mt-0 sm:max-w-max xl:p-0 dark:bg-primary-800 dark:border-gray-800">
                 <div class="md:w-1/2 p-6 space-y-4 md:space-y-6 sm:p-8">
                     <h1
                         class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
@@ -120,12 +121,13 @@
                                     data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor"
                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"></path>
+                                        d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25">
+                                    </path>
                                 </svg>
                             </div>
 
                             <div class="ml-3 text-sm">
-                                <label for="terms" class="font-light text-gray-500 dark:text-gray-300">I accept
+                                <label for="terms" class="font-light text-primary-500 dark:text-primary-200">I accept
                                     the <a class="font-medium text-primary-600 hover:underline dark:text-primary-200"
                                         href="#">Terms and Conditions</a></label>
                             </div>
@@ -134,7 +136,7 @@
                             class="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
                             onclick="return confirm('Are you sure you want to create an account?')">Create
                             an account</button>
-                        <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                        <p class="text-sm font-light text-primary-500 dark:text-primary-200">
                             Already have an account? <a href="login.html"
                                 class="font-medium text-primary-600 hover:underline dark:text-primary-200">Login
                                 here</a>
