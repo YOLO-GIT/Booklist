@@ -59,10 +59,5 @@ module.exports = {
             require('flowbite/plugin'),
             require('@tailwindcss/forms')
         ],
-        safelist: [
-            'bg-amber-700',
-            'bg-emerald-700',
-            'bg-red-700',
-        ],
     }
 }
