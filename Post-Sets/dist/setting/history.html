@@ -110,15 +110,68 @@
 
     <!-- Content -->
     <div class="p-4 sm:ml-64">
-        <section class="bg-slate-200 dark:bg-gray-900 rounded-md">
+        <section class="bg-slate-200 dark:bg-gray-300 rounded-md">
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-left lg:py-16 lg:px-12">
-                <h1 class="text-center text-white">C O M I N G&nbsp;&nbsp;&nbsp;S O O N</h1>
+                <table id="myTable" class="bg-white rounded-lg shadow-md w-full">
+                    <thead>
+                        <tr class="bg-gray-100 dark:bg-gray-400">
+                            <th class="py-2 px-4">Company</th>
+                            <th class="py-2 px-4">Contact</th>
+                            <th class="py-2 px-4">Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100 dark:hover:bg-gray-400 transition-colors">
+                            <td class="py-2 px-4">Alfreds Futterkiste</td>
+                            <td class="py-2 px-4">Maria Anders</td>
+                            <td class="py-2 px-4">Germany</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100 dark:hover:bg-gray-400 transition-colors">
+                            <td class="py-2 px-4">Centro comercial Moctezuma</td>
+                            <td class="py-2 px-4">Francisco Chang</td>
+                            <td class="py-2 px-4">Mexico</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100 dark:hover:bg-gray-400 transition-colors">
+                            <td class="py-2 px-4">Ernst Handel</td>
+                            <td class="py-2 px-4">Roland Mendel</td>
+                            <td class="py-2 px-4">Austria</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100 dark:hover:bg-gray-400 transition-colors">
+                            <td class="py-2 px-4">Island Trading</td>
+                            <td class="py-2 px-4">Helen Bennett</td>
+                            <td class="py-2 px-4">UK</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100 dark:hover:bg-gray-400 transition-colors">
+                            <td class="py-2 px-4">Laughing Bacchus Winecellars</td>
+                            <td class="py-2 px-4">Yoshi Tannamuri</td>
+                            <td class="py-2 px-4">Canada</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100 dark:hover:bg-gray-400 transition-colors">
+                            <td class="py-2 px-4">Magazzini Alimentari Riuniti</td>
+                            <td class="py-2 px-4">Giovanni Rovelli</td>
+                            <td class="py-2 px-4">Italy</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </div>
 
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
     <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                // Add any customization options here
+
+                // This customizes the position of the search bar and other elements
+            });
+        });
+    </script>
 </body>
 
 </html>
