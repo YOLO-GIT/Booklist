@@ -36,3 +36,20 @@ showConfirmPasswordIcon.addEventListener('click', function () {
         console.log("bruh hoi");
     }
 });
+
+import DataTable from 'datatables.net-dt';
+
+$(document).ready(function () {
+    let table = new DataTable('#myTable', {
+        "dom": '<"flex flex-row justify-between items-center mb-4"<"flex-shrink-0"f><"flex-shrink-0"l><"flex-shrink-0"B>><t><"flex justify-between items-center mt-4"p>',
+        "language": {
+            "search": '<input type="text" class="px-3 py-1 border rounded focus:outline-none focus:border-blue-500 dark:bg-gray-100 dark:border-gray-400 dark:text-gray-900" placeholder="Search...">',
+            "paginate": {
+                "first": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6"><path d="M12 2L3 9h5v12h4V9h5z"/></svg>',
+                "last": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6"><path d="M3 9h5v12h4V9h5l-7-7z"/></svg>',
+                "next": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6"><path d="M8 5v14l11-7z"/></svg>',
+                "previous": '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6"><path d="M14 19l-11-7 11-7v14z"/></svg>'
+            }
+        }
+    });
+});
