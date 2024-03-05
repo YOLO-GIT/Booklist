@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../logo/book/Logo.png">
+    <title>BookList || Confirmation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <div class="container mx-auto py-8 px-4">
+        <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="p-6">
+                <p class="text-lg text-center font-semibold mb-4">Warning: Deleting Your Account</p>
+                <p class="text-sm text-gray-700 mb-4">By clicking the button below, you will delete your account. You
+                    have 15 seconds before account cease to exist.</p>
+                <button id="deleteButton" onclick="startTimer(); this.disabled = true;"
+                    class="block w-full text-center bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-50">
+                    Delete My Account
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startTimer() {
+            var seconds = 15;
+            var timer = setInterval(function () {
+                document.getElementById("deleteButton").innerText = "Delete My Account (" + seconds + "s)";
+                seconds--;
+                if (seconds < 0) {
+                    clearInterval(timer);
+                    if (confirm("Are you sure you want to delete your account?")) {
+                        // Redirect to delete account page
+                        window.location.href = "";
+                    }
+                    document.getElementById("deleteButton").disabled =
+                        false; // Enable the button after the timer
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
