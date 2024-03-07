@@ -38,7 +38,11 @@ module.exports = {
                     'Segoe UI Symbol',
                     'Noto Color Emoji'
                 ]
-            }
+            },
+            backgroundImage: {
+                'parallax': 'url("../lighbulg.jpg")',
+                'parallax2': 'url("../pcez.jpg")'
+            },
         },
         plugins: [
             require('flowbite/plugin'),
