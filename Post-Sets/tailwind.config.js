@@ -41,7 +41,9 @@ module.exports = {
             },
             backgroundImage: {
                 'parallax': 'url("../lighbulg.jpg")',
-                'parallax2': 'url("../pcez.jpg")'
+                'parallax2': 'url("../pcez.jpg")',
+                'parallax3': 'url("../hog.jpg")'
+
             },
         },
         plugins: [
