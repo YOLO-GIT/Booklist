@@ -9,18 +9,17 @@
     <title>BookList || Bio</title>
 </head>
 
-<!-- component -->
-
 <body
     class="bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-400 dark:from-blue-900 dark:via-blue-800 dark:to-cyan-800">
-    <section class="py-8 px-4 my-10 sm:my-20 sm:py-10 sm:px-0">
+    <section class="py-2 px-2 my-5 sm:my-2 sm:py-5 sm:px-0">
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <h1 class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
                 <img class="w-8 h-8 mr-2" src="../../logo/book/Logo.png" alt="logo">
                 𝐵𝑜𝑜𝓀𝐿𝒾𝓈𝓉
             </h1>
-            <div class="w-full flex flex-col md:flex-row bg-slate-50 rounded-lg shadow dark:border md:mt-0 sm:max-w-max xl:p-0 dark:bg-primary-800 dark:border-gray-700">
-                <div class="md:w-1/2 p-6 space-y-4 md:space-y-6 sm:p-8">
+            <div
+                class="w-full flex flex-col md:flex-row bg-slate-50 rounded-lg shadow dark:border md:mt-0 sm:max-w-max xl:p-0 dark:bg-blue-800 dark:border-gray-700">
+                <div class="md:w-full p-6 space-y-4 md:space-y-6 sm:p-8">
                     <a href="../profile.html">
                         <svg class="w-4 h-4 text-black dark:text-white" data-slot="icon" fill="none" stroke-width="1.5"
                             stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +40,7 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First
                                     name</label>
                                 <input type="text" name="first_name" id="first_name"
-                                    class="bg-gray-200 border border-gray-300 text-gray-900 text-xs sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-200 border border-gray-300 text-gray-900 text-xs sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     required="" placeholder="John">
                             </div>
                             <div class="flex-1">
@@ -49,7 +48,7 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last
                                     name</label>
                                 <input type="text" name="last_name" id="last_name"
-                                    class="bg-gray-200 border border-gray-300 text-gray-900 text-xs sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-200 border border-gray-300 text-gray-900 text-xs sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     required="" placeholder="Doe">
                             </div>
                         </div>
@@ -58,7 +57,7 @@
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Add
                                 Nickname</label>
                             <input type="text" name="nickname" id="nickname"
-                                class="bg-gray-200 border border-gray-300 text-gray-900 text-xs sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="bg-gray-200 border border-gray-300 text-gray-900 text-xs sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 required="" placeholder="Sugma Ballz">
                         </div>
                         <div class="flex space-x-4">
@@ -67,7 +66,7 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                                     tag</label>
                                 <input type="text" name="tag_one" id="tag_one"
-                                    class="bg-gray-200 border border-gray-300 text-gray-900 text-xs sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-200 border border-gray-300 text-gray-900 text-xs sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Conqueror of the moon" required="">
                             </div>
                             <div class="flex-1">
@@ -75,11 +74,19 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Another
                                     tag</label>
                                 <input type="text" name="tag_two" id="tag_two"
-                                    class="bg-gray-200 border border-gray-300 text-gray-900 text-xs sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-200 border border-gray-300 text-gray-900 text-xs sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-white dark:border-black dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Infinite Rizzonomy" required="">
                             </div>
                         </div>
-                        <div>
+
+                        <button type="submit"
+                            class="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+                            onclick="return confirm('Are you sure you want to save this?')">Update Bio</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 bg-gray-100 dark:bg-slate-800 p-6 rounded-lg flex items-center justify-center">
+                    <div class="max-w-sm">
+                        <div class="mb-5">
                             <label for="Desc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Add
                                 Description</label>
                             <textarea id="desc" name="desc" rows="4"
@@ -87,8 +94,8 @@
                                 placeholder="Write your thoughts here..." maxlength="75"></textarea>
                         </div>
                         <div>
-                            <label for="Img" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                                Upload/Update Profile Image</label>
+                            <label for="Img"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload Profile Image</label>
                             <div class="flex items-center justify-center w-full">
                                 <label for="dropzone-file"
                                     class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
@@ -99,32 +106,14 @@
                                                 stroke-width="2"
                                                 d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
                                         </svg>
-                                        <p class="text-sm text-gray-500 dark:text-gray-400"><span
-                                                class="font-semibold">Click to upload</span> or drag and drop</p>
-                                        <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX.
-                                            800x400px)</p>
+                                        <p class="text-sm text-center text-gray-500 dark:text-gray-400"><span
+                                                class="font-semibold">Upload</span> image here.</p>
                                     </div>
                                     <input id="dropzone-file" type="file" class="hidden" />
                                 </label>
                             </div>
 
                         </div>
-                        <button type="submit"
-                            class="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-                            onclick="return confirm('Are you sure you want to save this?')">Update Bio
-                        </button>
-                    </form>
-                </div>
-                <div class="md:w-1/2 bg-gray-100 dark:bg-slate-800 p-6 rounded-lg flex items-center justify-center">
-                    <div class="max-w-sm">
-                        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">✌𝓦𝓱𝓪𝓽 𝓲𝓼 𝓑𝓲𝓸✌
-                        </h2>
-                        <p class="mt-2 text-gray-700 dark:text-gray-300 italic font-light">A bio is a concise summary or
-                            description of an individual's professional background, interests, achievements, and
-                            personal qualities. It provides a snapshot of who they are, what they do, and what they're
-                            passionate about, typically used in social media profiles, resumes, or introductions. For
-                            summary: Me know you, life happy.
-                        </p>
                     </div>
                 </div>
             </div>
