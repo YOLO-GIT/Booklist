@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/output.css">
     <link rel="icon" type="image/x-icon" href="../logo/book/Logo.png">
     <meta name="author" content="YOLO-GIT">
     <meta name="keywords" content="Bookmark, save link, sponros">
@@ -17,13 +18,48 @@
 </head>
 
 <body>
-    <video class="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700" controls>
-        <source src="/docs/videos/flowbite.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <header class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold flex items-center underline">
+                <a href="about-us.html">
+                    <svg class="w-5 h-5 mr-5" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3">
+                        </path>
+                    </svg>
+                </a>
+                Sponsor Me :D
+            </h1>
+        </div>
+    </header>
+
+
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-4">Support Me:</h2>
+        <!-- Add your sponsor logos or names here -->
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+            data-name="bmc-button" data-slug="YOLOGIT" data-color="#FFDD00" data-emoji="👾" data-font="Bree"
+            data-text="Buy me a robot" data-outline-color="#000000" data-font-color="#000000"
+            data-coffee-color="#ffffff">
+        </script>
+    </main>
+
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Featured Video</h2>
+            <video class="w-full max-w-full border border-gray-200 rounded-lg" controls>
+                <source src="../【ブルアカ】イタズラ☆ストレート セカンドシングル『全力絶対Come☆True』.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-center">© 2024 YOLO-GIT. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
