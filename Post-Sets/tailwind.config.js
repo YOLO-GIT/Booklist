@@ -39,12 +39,6 @@ module.exports = {
                     'Noto Color Emoji'
                 ]
             },
-            backgroundImage: {
-                'parallax': 'url("../lighbulg.jpg")',
-                'parallax2': 'url("../pcez.jpg")',
-                'parallax3': 'url("../hog.jpg")'
-
-            },
         },
         plugins: [
             require('flowbite/plugin'),
