@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/output.css">
-    <link rel="icon" type="image/x-icon" href="logo/book/Logo.png">
+    <link rel="stylesheet" href="Post-Sets/src/output.css">
+    <link rel="icon" type="image/x-icon" href="Post-Sets/logo/book/Logo.png">
     <meta name="author" content="YOLO-GIT">
     <meta name="keywords" content="Bookmark, save link">
     <meta name="description" content="Learn more about BookList and the team behind it.">
@@ -14,7 +14,7 @@
     <meta property="og:title" content="BookList">
     <meta property="og:description" content="Learn more about BookList and the team behind it.">
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="image/Kirbo.png" />
+    <meta property="og:image" content="Post-Sets/image/Kirbo.png" />
     <title>Opening</title>
 </head>
 
@@ -26,13 +26,13 @@
         <p class="text-lg text-white mb-8">
             Keep track of your bookmarks and access them anytime, anywhere.
         </p>
-        <a href="./dist/login.html" class="bg-white text-green-500 hover:bg-green-500 hover:text-white py-2 px-4 rounded-full font-semibold
+        <a href="Post-Sets/dist/login.html" class="bg-white text-green-500 hover:bg-green-500 hover:text-white py-2 px-4 rounded-full font-semibold
        transition duration-300">
             Get Started
         </a>
     </div>
     <div class="absolute inset-0 flex justify-center items-center">
-        <img src="image/intro (1)-2x-RIFE-RIFE3.1-50fps.gif" alt="Stunning GIF" class="gif" />
+        <img src="Post-Sets/image/intro (1)-2x-RIFE-RIFE3.1-50fps.gif" alt="Stunning GIF" class="gif" />
     </div>  
 </body>
 
