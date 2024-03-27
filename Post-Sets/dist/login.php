@@ -26,7 +26,7 @@
                         class="text-xl font-bold leading-tight text-center tracking-tight text-gray-900 md:text-2xl dark:text-white">
                         Sign in to your account
                     </h1>
-                    <form class="space-y-4 md:space-y-6" action="home.html">
+                    <form class="space-y-4 md:space-y-6" method="post" action="auth/login_process.php">
                         <div class="relative">
                             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                                 email</label>
@@ -94,10 +94,10 @@
                                 password?</a>
                         </div>
                         <button type="submit"
-                            class="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Sign
+                            class="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" name="cmdlogin">Sign
                             in</button>
                         <p class="text-sm font-light text-blue-500 dark:text-blue-200">
-                            Don’t have an account yet? <a href="register.html"
+                            Don’t have an account yet? <a href="register.php"
                                 class="font-medium text-blue-600 hover:underline dark:text-blue-200">Sign up</a>
                         </p>
                     </form>
