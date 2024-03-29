@@ -1,11 +1,13 @@
 <?php // Sekiranya button submit diklik
+//Create Connection to the database
+include '../../conn.php';
 
 // Start the session
 session_start();
 
 // Check if the user is already logged in
 if (isset($_SESSION["IDUser"])) {
-    echo "<script>window.location.href='../../../index.php';</script>";
+    echo "<script>window.location.href='../../home.html';</script>";
     exit;
 }
 
@@ -13,9 +15,6 @@ if (isset($_SESSION["IDUser"])) {
 if (isset($_POST["cmdlogin"])) {
     $email = $_POST["email"];
     $password = hash("sha512", $_POST["password"]);
-
-    //Create Connection to the database
-    include '../../conn.php';
 
     // Define SQL Statement for comparison
     $sql = "SELECT * FROM `tbluser` WHERE user_email='$email' AND user_password='$password'";
@@ -31,10 +30,11 @@ if (isset($_POST["cmdlogin"])) {
         // Inform to the user
         echo "<script>alert('Login Success');</script>";
         // Redirect to index.php
-        echo "<script>window.location.href='../home.php';</script>";
+        echo "<script>window.location.href='../home.html';</script>";
         exit;
     } else {
         echo "<script>alert('Invalid username or password');</script>";
+        echo "<script>window.location.href='../login.php';</script>";
     }
 
     // Close Connection

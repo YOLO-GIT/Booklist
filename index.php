@@ -26,7 +26,7 @@
         <p class="text-lg text-white mb-8">
             Keep track of your bookmarks and access them anytime, anywhere.
         </p>
-        <a href="Post-Sets/dist/login.html" class="bg-white text-green-500 hover:bg-green-500 hover:text-white py-2 px-4 rounded-full font-semibold
+        <a href="Post-Sets/dist/login.php" class="bg-white text-green-500 hover:bg-green-500 hover:text-white py-2 px-4 rounded-full font-semibold
        transition duration-300">
             Get Started
         </a>

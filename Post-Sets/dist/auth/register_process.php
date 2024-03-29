@@ -21,7 +21,7 @@ if (isset($_POST["cmdregister"])) {
 
     //USERNAME
     $check_email_query = "SELECT * FROM tbluser WHERE user_email='$email'";
-    $check_email = mysqli_query($con, $check_username_query);
+    $check_email = mysqli_query($con, $check_email_query);
     //PASSWORD
     $check_password_query = "SELECT * FROM tbluser WHERE user_password='$password'";
     $check_password = mysqli_query($con, $check_password_query);
@@ -44,10 +44,13 @@ if (isset($_POST["cmdregister"])) {
         echo "<script>window.location.href='../register.php';</script>";
     } else {
         // Store the verification code in the database
-        $sql_register = "INSERT INTO `tbluser`(`user_first`, `user_last`, `user_email`, `user_password`, `user_nickname`, `user_ftag`, `user_stag`) 
-        VALUES ('$fname','$lname','$email','$password','$nickname','$first_tag','$second_tag')";
-        //Close Con
+        $sql_register = "INSERT INTO `tbluser`(`user_id`,`user_first`, `user_last`, `user_email`, `user_password`, `user_nickname`, `user_ftag`, `user_stag`) 
+        VALUES ('[value-1]','$fname','$lname','$email','$password','$nickname','$first_tag','$second_tag')";
+        // Validation if the content is same
+        echo "<script>alert('Success.');</script>";
+        // Close the DB to ensure it will not updated.
         mysqli_close($con);
+        // Sending back to the Teacher Panel.
+        // echo "<script>window.location.href='../home.html';</script>";
     }
 }
-
