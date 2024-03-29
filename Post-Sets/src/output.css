@@ -2545,10 +2545,6 @@ body::-webkit-scrollbar {
           box-decoration-break: clone;
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -3070,11 +3066,6 @@ body::-webkit-scrollbar {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-.text-green-500 {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .text-indigo-500 {
@@ -4022,10 +4013,6 @@ body::-webkit-scrollbar {
 
   .sm\:underline {
     text-decoration-line: underline;
-  }
-
-  .sm\:opacity-0 {
-    opacity: 0;
   }
 
   .placeholder\:sm\:text-sm::-moz-placeholder {
