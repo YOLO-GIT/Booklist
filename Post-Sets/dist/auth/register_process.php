@@ -1,7 +1,7 @@
 <?php
 
 //Create Connection to the database
-include '../conn.php';
+include '../../conn.php';
 
 // isset = is setted to ?
 if (isset($_POST["cmdregister"])) {
