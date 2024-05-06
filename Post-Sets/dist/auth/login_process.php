@@ -7,7 +7,7 @@ session_start();
 
 // Check if the user is already logged in
 if (isset($_SESSION["IDUser"])) {
-    echo "<script>window.location.href='../../home.html';</script>";
+    echo "<script>window.location.href='../../home.php';</script>";
     exit;
 }
 
@@ -30,7 +30,7 @@ if (isset($_POST["cmdlogin"])) {
         // Inform to the user
         echo "<script>alert('Login Success');</script>";
         // Redirect to index.php
-        echo "<script>window.location.href='../home.html';</script>";
+        echo "<script>window.location.href='../home.php';</script>";
         exit;
     } else {
         echo "<script>alert('Invalid username or password');</script>";

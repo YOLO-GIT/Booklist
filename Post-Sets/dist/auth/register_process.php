@@ -51,6 +51,6 @@ if (isset($_POST["cmdregister"])) {
         // Close the DB to ensure it will not updated.
         mysqli_close($con);
         // Sending back to the Teacher Panel.
-        // echo "<script>window.location.href='../home.html';</script>";
+        // echo "<script>window.location.href='../home.php';</script>";
     }
 }
