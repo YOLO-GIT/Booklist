@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Check if the user is already logged in
+if (!isset($_SESSION["IDUser"])) {
+    echo "<script>window.location.href='login.php';</script>";
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,12 +34,12 @@
                     </button>
                     <a href="https://flowbite.com" class="flex ms-2 md:me-24">
                         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
-                        <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Flowbite</span>
+                        <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">BookList</span>
                     </a>
                 </div>
                 <div class="flex items-center">
                     <div class="flex items-center ms-3">
-                        <a href="../../index.php">
+                        <a href="auth/logout.php">
                             <button type="button" aria-expanded="false" data-dropdown-toggle="dropdown-user">
                                 <svg class="w-8 h-8 text-black dark:text-white" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
@@ -107,6 +117,34 @@
 
     <!-- UNDER CONSTRUCTION -->
     <!-- NOTE TO FUTURE-SELF: JUST PUT A "WELCOME" STATEMENT -->
+    <div class="flex flex-col text-center p-4 mt-32 sm:mt-20 sm:ml-64">
+        <h1 class="text-6xl sm:text-8xl font-bold mb-4">Welcome</h1>
+        <p class="text-xl sm:text-2xl">We're glad you're here!</p>
+        <!-- Whats new -->
+        <!-- News Section -->
+        <div class=" p-4 mt-8 sm:mt-20 w-full">
+            <h2 class="text-4xl font-bold mb-4">What's New</h2>
+            <div class="space-y-4">
+                <!-- News Item 1 -->
+                <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-2">News Title 1</h3>
+                    <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <!-- News Item 2 -->
+                <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-2">News Title 2</h3>
+                    <p class="text-lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <!-- News Item 3 -->
+                <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-2">News Title 3</h3>
+                    <p class="text-lg">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="../script/chart.js"></script>
