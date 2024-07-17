@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Check if the user is already logged in
+if (isset($_SESSION["IDUser"])) {
+    echo "<script>window.location.href='home.php';</script>";
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,15 +65,14 @@
                         <div class="flex items-center justify-between">
                             <div class="flex items-start">
                                 <div class="flex items-center h-5">
-                                    <input id="remember" aria-describedby="remember" type="checkbox" class="peer relative appearance-none shrink-0 w-4 h-4 mt-1" required="">
+                                    <input id="remember" aria-describedby="remember" type="checkbox" class="peer relative appearance-none shrink-0 w-4 h-4 mt-1">
                                     <svg class="absolute w-5 h-5 pointer-events-none stroke-black dark:stroke-white fill-none peer-checked:!fill-red-500" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z">
                                         </path>
                                     </svg>
                                 </div>
                                 <div class="ml-3 text-sm">
-                                    <label for="remember" class="text-gray-500 dark:text-blue-200">Remember
-                                        me</label>
+                                    <label for="remember" class="text-gray-500 dark:text-blue-200">Love me :D</label>
                                 </div>
                             </div>
                             <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-200">Forgot

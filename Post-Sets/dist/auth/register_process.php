@@ -12,9 +12,9 @@ if (isset($_POST["cmdregister"])) {
     $password = hash("sha512", $_POST["password"]);
     $confirm_password = hash("sha512", $_POST["confirm_password"]);
 
-    $nickname = 'bababoi';
-    $first_tag = 'Alucard';
-    $second_tag = 'Symphony';
+    $nickname = 'Default';
+    $first_tag = 'Default';
+    $second_tag = 'Default';
 
     // Check if the content already exist:
     // CHECKING START
@@ -48,9 +48,11 @@ if (isset($_POST["cmdregister"])) {
         VALUES ('[value-1]','$fname','$lname','$email','$password','$nickname','$first_tag','$second_tag')";
         // Validation if the content is same
         echo "<script>alert('Success.');</script>";
+        //Execute SQL Register Statement
+        $res = mysqli_query($con, $sql_register);
         // Close the DB to ensure it will not updated.
         mysqli_close($con);
         // Sending back to the Teacher Panel.
-        // echo "<script>window.location.href='../home.php';</script>";
+        echo "<script>window.location.href='../login.php';</script>";
     }
 }

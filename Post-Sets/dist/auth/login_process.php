@@ -7,7 +7,7 @@ session_start();
 
 // Check if the user is already logged in
 if (isset($_SESSION["IDUser"])) {
-    echo "<script>window.location.href='../../home.php';</script>";
+    echo "<script>window.location.href='../home.php';</script>";
     exit;
 }
 
@@ -26,7 +26,7 @@ if (isset($_POST["cmdlogin"])) {
     if (mysqli_num_rows($res) > 0) {
         $user = mysqli_fetch_assoc($res);
         // Create a session with a name IDStud
-        $_SESSION["IDUser"] = $user["user_ID"];
+        $_SESSION["IDUser"] = $user["user_id"];
         // Inform to the user
         echo "<script>alert('Login Success');</script>";
         // Redirect to index.php
